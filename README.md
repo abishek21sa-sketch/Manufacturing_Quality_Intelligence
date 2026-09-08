@@ -33,6 +33,14 @@ The product now integrates an MSA-aware finite-horizon inspection POMDP. Latent 
 
 # Manufacturing Quality Intelligence Platform
 
+## Deployment
+
+Deploy `src/mqi/service/static/` as the Vercel project root. Its `config.js`
+routes browser API calls to the Render service declared in the root
+`render.yaml`; override `window.__MQI_API_BASE__` for previews. Deploy the
+repository root as a Render Blueprint, then verify `/health` and `/v1/evidence`
+before opening the Vercel command center.
+
 A production-structured manufacturing quality decision intelligence system implementing the governed loop **measure → detect → predict → diagnose → simulate → optimize → recommend**.
 
 ## Portfolio release 1.5.0

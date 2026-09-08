@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: manufacturing-quality-intelligence-api
+    runtime: python
+    plan: free
+    buildCommand: pip install .
+    startCommand: uvicorn mqi.service.api:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: MQI_CORS_ORIGINS
+        value: "*"
+
