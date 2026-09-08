@@ -1,0 +1,208 @@
+{
+  "release": "MQI_PORTFOLIO_RC1",
+  "method": "ECON-SPC-P",
+  "optimal_expected_cost": 82.64691069659199,
+  "no_inspection_expected_cost": 157.74153,
+  "modeled_cost_avoidance": 75.09461930340802,
+  "first_action": [
+    1,
+    1
+  ],
+  "risk_priority_frontier": [
+    {
+      "line0_bad_belief": 0.02,
+      "expected_cost": 61.287317458000004,
+      "first_action": [
+        0,
+        1
+      ]
+    },
+    {
+      "line0_bad_belief": 0.08,
+      "expected_cost": 74.10673410377919,
+      "first_action": [
+        1,
+        1
+      ]
+    },
+    {
+      "line0_bad_belief": 0.15,
+      "expected_cost": 78.37649083016,
+      "first_action": [
+        1,
+        1
+      ]
+    },
+    {
+      "line0_bad_belief": 0.25,
+      "expected_cost": 84.47780021799998,
+      "first_action": [
+        1,
+        1
+      ]
+    },
+    {
+      "line0_bad_belief": 0.4,
+      "expected_cost": 93.62858995719998,
+      "first_action": [
+        1,
+        1
+      ]
+    },
+    {
+      "line0_bad_belief": 0.6,
+      "expected_cost": 105.829217940272,
+      "first_action": [
+        1,
+        1
+      ]
+    }
+  ],
+  "msa_precision_frontier": [
+    {
+      "measurement_sd": 0.05,
+      "sensitivity": 0.9213503964748575,
+      "specificity": 0.9893207297830827,
+      "effective_measurement_sd": 0.05
+    },
+    {
+      "measurement_sd": 0.15,
+      "sensitivity": 0.9054193637023961,
+      "specificity": 0.9815557871464751,
+      "effective_measurement_sd": 0.15
+    },
+    {
+      "measurement_sd": 0.35,
+      "sensitivity": 0.8437888943786532,
+      "specificity": 0.9355574633835553,
+      "effective_measurement_sd": 0.35
+    },
+    {
+      "measurement_sd": 0.7,
+      "sensitivity": 0.7385483827436647,
+      "specificity": 0.8209901405885921,
+      "effective_measurement_sd": 0.7
+    },
+    {
+      "measurement_sd": 1.5,
+      "sensitivity": 0.627263285243529,
+      "specificity": 0.6763816286779305,
+      "effective_measurement_sd": 1.5
+    }
+  ],
+  "msa_policy_stress": [
+    {
+      "measurement_sd": 0.05,
+      "expected_cost": 71.71285665539304,
+      "first_action": [
+        1,
+        1
+      ],
+      "action_models": [
+        {
+          "action": 1,
+          "replicates": 1,
+          "sensitivity": 0.9213503964748575,
+          "specificity": 0.9893207297830827
+        },
+        {
+          "action": 2,
+          "replicates": 3,
+          "sensitivity": 0.9227386896857669,
+          "specificity": 0.9898998173206001
+        }
+      ]
+    },
+    {
+      "measurement_sd": 0.15,
+      "expected_cost": 73.84135910210894,
+      "first_action": [
+        1,
+        1
+      ],
+      "action_models": [
+        {
+          "action": 1,
+          "replicates": 1,
+          "sensitivity": 0.9054193637023961,
+          "specificity": 0.9815557871464751
+        },
+        {
+          "action": 2,
+          "replicates": 3,
+          "sensitivity": 0.917241070651265,
+          "specificity": 0.9875126603534728
+        }
+      ]
+    },
+    {
+      "measurement_sd": 0.35,
+      "expected_cost": 83.77120057341835,
+      "first_action": [
+        1,
+        1
+      ],
+      "action_models": [
+        {
+          "action": 1,
+          "replicates": 1,
+          "sensitivity": 0.8437888943786532,
+          "specificity": 0.9355574633835553
+        },
+        {
+          "action": 2,
+          "replicates": 3,
+          "sensitivity": 0.8919897095222706,
+          "specificity": 0.9735206687809477
+        }
+      ]
+    },
+    {
+      "measurement_sd": 0.7,
+      "expected_cost": 103.18572739654235,
+      "first_action": [
+        1,
+        1
+      ],
+      "action_models": [
+        {
+          "action": 1,
+          "replicates": 1,
+          "sensitivity": 0.7385483827436647,
+          "specificity": 0.8209901405885921
+        },
+        {
+          "action": 2,
+          "replicates": 3,
+          "sensitivity": 0.8251624120574717,
+          "specificity": 0.9178507363165636
+        }
+      ]
+    },
+    {
+      "measurement_sd": 1.5,
+      "expected_cost": 120.74115696996039,
+      "first_action": [
+        1,
+        0
+      ],
+      "action_models": [
+        {
+          "action": 1,
+          "replicates": 1,
+          "sensitivity": 0.627263285243529,
+          "specificity": 0.6763816286779305
+        },
+        {
+          "action": 2,
+          "replicates": 3,
+          "sensitivity": 0.7037745443416271,
+          "specificity": 0.777495640626632
+        }
+      ]
+    }
+  ],
+  "msa_cost_penalty_worst_vs_best": 49.028300314567346,
+  "production_write_allowed": false,
+  "evidence_boundary": "Synthetic/model-based quality economics; no realized plant-savings claim."
+}

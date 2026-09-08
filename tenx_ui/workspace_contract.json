@@ -1,0 +1,440 @@
+{
+  "actor": "Quality Engineer",
+  "decision": "inspection / containment / corrective-action policy",
+  "entity": "part / line / quality characteristic",
+  "workspaces": [
+    {
+      "workspace": "Quality Command",
+      "engineering_question": "What does Quality Command show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Quality-risk decision queue combining escapes, process stability, MSA and COPQ",
+      "evidence": "Evidence object: Quality-risk decision queue combining escapes, process stability, MSA and COPQ; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable quality command evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Quality Command evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Data Quality",
+      "engineering_question": "What does Data Quality show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Schema completeness, missingness, timestamp/entity integrity and measurement plausibility checks",
+      "evidence": "Evidence object: Schema completeness, missingness, timestamp/entity integrity and measurement plausibility checks; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable data quality evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Data Quality evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "SPC",
+      "engineering_question": "What does SPC show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Shewhart/I-MR control statistics with baseline limits and special-cause rule screening",
+      "evidence": "Evidence object: Shewhart/I-MR control statistics with baseline limits and special-cause rule screening; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable spc evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the SPC evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Advanced SPC",
+      "engineering_question": "What does Advanced SPC show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "EWMA/CUSUM-style persistent-shift diagnostics and multivariate signal review",
+      "evidence": "Evidence object: EWMA/CUSUM-style persistent-shift diagnostics and multivariate signal review; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable advanced spc evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Advanced SPC evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Capability",
+      "engineering_question": "What does Capability show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Cp/Cpk/Pp/Ppk capability against engineering tolerances with subgroup/overall variation",
+      "evidence": "Evidence object: Cp/Cpk/Pp/Ppk capability against engineering tolerances with subgroup/overall variation; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable capability evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Capability evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "MSA / Gage R&R",
+      "engineering_question": "What does MSA / Gage R&R show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Repeatability/reproducibility and discrimination analysis before inspection-policy optimization",
+      "evidence": "Evidence object: Repeatability/reproducibility and discrimination analysis before inspection-policy optimization; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable msa / gage r&r evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the MSA / Gage R&R evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Defect Risk AI",
+      "engineering_question": "What does Defect Risk AI show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Gradient-boosted decision-stump defect probability with holdout calibration/performance evidence",
+      "evidence": "Evidence object: Gradient-boosted decision-stump defect probability with holdout calibration/performance evidence; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable defect risk ai evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Defect Risk AI evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Drift Detection",
+      "engineering_question": "What does Drift Detection show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Distribution and prediction drift monitoring across time/line/shift cohorts",
+      "evidence": "Evidence object: Distribution and prediction drift monitoring across time/line/shift cohorts; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable drift detection evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Drift Detection evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Root Cause",
+      "engineering_question": "What does Root Cause show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Defect-vs-good factor contrasts, stratification and evidence-ranked root-cause candidates",
+      "evidence": "Evidence object: Defect-vs-good factor contrasts, stratification and evidence-ranked root-cause candidates; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable root cause evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Root Cause evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "PFMEA",
+      "engineering_question": "What does PFMEA show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Severity-occurrence-detection risk prioritization linked to observed quality evidence",
+      "evidence": "Evidence object: Severity-occurrence-detection risk prioritization linked to observed quality evidence; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable pfmea evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the PFMEA evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "GAGE-SHIELD",
+      "engineering_question": "What does GAGE-SHIELD show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Measurement-aware inspection-capacity allocation using defect risk and gage discrimination",
+      "evidence": "Evidence object: Measurement-aware inspection-capacity allocation using defect risk and gage discrimination; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable gage-shield evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the GAGE-SHIELD evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "ECON-SPC-P",
+      "engineering_question": "What does ECON-SPC-P show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Partially observable Markov decision process for adaptive inspection/control economics",
+      "evidence": "Evidence object: Partially observable Markov decision process for adaptive inspection/control economics; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable econ-spc-p evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the ECON-SPC-P evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Inspection Economics",
+      "engineering_question": "What does Inspection Economics show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Inspection, correction, escape, scrap and capacity cost decomposition",
+      "evidence": "Evidence object: Inspection, correction, escape, scrap and capacity cost decomposition; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable inspection economics evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Inspection Economics evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Acceptance Sampling",
+      "engineering_question": "What does Acceptance Sampling show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Lot acceptance operating-characteristic / sampling-risk decision support",
+      "evidence": "Evidence object: Lot acceptance operating-characteristic / sampling-risk decision support; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable acceptance sampling evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Acceptance Sampling evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Monte Carlo Risk",
+      "engineering_question": "What does Monte Carlo Risk show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Stochastic quality-cost and escape-risk propagation under process/measurement uncertainty",
+      "evidence": "Evidence object: Stochastic quality-cost and escape-risk propagation under process/measurement uncertainty; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable monte carlo risk evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Monte Carlo Risk evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "COPQ & Pareto",
+      "engineering_question": "What does COPQ & Pareto show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Cost-of-poor-quality decomposition and cumulative defect/cost concentration",
+      "evidence": "Evidence object: Cost-of-poor-quality decomposition and cumulative defect/cost concentration; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable copq & pareto evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the COPQ & Pareto evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Corrective Actions",
+      "engineering_question": "What does Corrective Actions show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Evidence-to-action queue with containment, verification and sustainment requirements",
+      "evidence": "Evidence object: Evidence-to-action queue with containment, verification and sustainment requirements; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable corrective actions evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Corrective Actions evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "AI Quality Engineer",
+      "engineering_question": "What does AI Quality Engineer show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Tool-using case review combining defect ML, RCA, GAGE-SHIELD and ECON-SPC-P",
+      "evidence": "Evidence object: Tool-using case review combining defect ML, RCA, GAGE-SHIELD and ECON-SPC-P; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable ai quality engineer evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the AI Quality Engineer evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Research Evidence",
+      "engineering_question": "What does Research Evidence show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Ablation, MSA sensitivity, policy comparison and empirical/synthetic claim boundaries",
+      "evidence": "Evidence object: Ablation, MSA sensitivity, policy comparison and empirical/synthetic claim boundaries; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable research evidence evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Research Evidence evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Release Review",
+      "engineering_question": "What does Release Review show that would change the inspection / containment / corrective-action policy for the current part / line / quality characteristic scope?",
+      "method": "Human quality-policy approval with evidence fingerprint and autonomous-change block",
+      "evidence": "Evidence object: Human quality-policy approval with evidence fingerprint and autonomous-change block; compared with prediction uncertainty, baseline/counterfactual, provenance and current release/HOLD state.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable release review evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Release Review evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Data Backbone",
+      "engineering_question": "Can the inspection / containment / corrective-action decision be traced to a reproducible external source rather than only a demo fixture?",
+      "method": "Steel Plates Faults source contract plus local process-fixture provenance",
+      "evidence": "Evidence object: Steel Plates Faults source contract plus local process-fixture provenance, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable data backbone evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Data Backbone evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Historical Intelligence",
+      "engineering_question": "How has fault mix, capability, gage quality and containment chronology changed across cohorts, runs or states?",
+      "method": "Line/shift/time defect chronology, capability drift and containment/recovery evidence",
+      "evidence": "Evidence object: Line/shift/time defect chronology, capability drift and containment/recovery evidence, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable historical intelligence evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Historical Intelligence evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Entity / Factor Explorer",
+      "engineering_question": "Which part / fault / gage / inspection station carries the highest evidence concentration?",
+      "method": "Line, shift, wear, vibration, environment and operator factor stratification",
+      "evidence": "Evidence object: Line, shift, wear, vibration, environment and operator factor stratification, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable entity / factor explorer evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Entity / Factor Explorer evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Empirical Case Study",
+      "engineering_question": "Which defect classes consume the most economic quality risk under limited inspection capacity?",
+      "method": "Steel-plate fault escape study from defect signal to adaptive inspection allocation",
+      "evidence": "Evidence object: Steel-plate fault escape study from defect signal to adaptive inspection allocation, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable empirical case study evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Empirical Case Study evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "External Validation",
+      "engineering_question": "When does poor measurement quality make inspection less valuable than containment?",
+      "method": "Public fault-data refresh and transfer validation for risk/inspection methods",
+      "evidence": "Evidence object: Public fault-data refresh and transfer validation for risk/inspection methods, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable external validation evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the External Validation evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Data Refresh",
+      "engineering_question": "Is the current analytical state fresh enough to support the inspection / containment / corrective-action decision?",
+      "method": "Versioned UCI refresh, checksum, schema drift and model/policy revalidation",
+      "evidence": "Evidence object: Versioned UCI refresh, checksum, schema drift and model/policy revalidation, with explicit external/reference data mode and claim boundary.",
+      "required_inputs": [
+        "part / line / quality characteristic",
+        "validated source/provenance",
+        "current constraints/state"
+      ],
+      "decision_output": "Auditable data refresh evidence for inspection / containment / corrective-action policy",
+      "operator_action": "Quality Engineer reviews the Data Refresh evidence, drills into the responsible part / line / quality characteristic, then approves, holds or escalates the inspection / containment / corrective-action policy."
+    },
+    {
+      "workspace": "Containment Campaign",
+      "engineering_question": "Which inspection policy remains defensible as defect predictions and gage evidence vary?",
+      "method": "Multi-seed boosted defect risk + GAGE-SHIELD allocation with ECON-SPC-P escalation",
+      "evidence": "Selected-line stability, Brier score, capacity use and expected uninspected escape exposure",
+      "required_inputs": [
+        "line / shift / gage / inspection action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable containment campaign evidence for inspection / containment policy decision",
+      "operator_action": "Deploy only stable capacity-feasible inspection actions."
+    },
+    {
+      "workspace": "Escape-Cost Frontier",
+      "engineering_question": "What expected quality escape exposure remains after allocating inspection capacity?",
+      "method": "Risk \u00d7 escape-cost aggregation on unselected lines after measurement-aware allocation",
+      "evidence": "Expected uninspected escape cost by scenario and selected lines",
+      "required_inputs": [
+        "line / shift / gage / inspection action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable escape-cost frontier evidence for inspection / containment policy decision",
+      "operator_action": "Reallocate capacity when residual expected escape exposure is excessive."
+    },
+    {
+      "workspace": "Measurement Risk",
+      "engineering_question": "When does poor gage discrimination invalidate a high-risk inspection priority?",
+      "method": "Sensitivity/specificity discrimination review tied to predicted defect risk and economic value",
+      "evidence": "Gage discrimination, gage value and risk rank by line",
+      "required_inputs": [
+        "line / shift / gage / inspection action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable measurement risk evidence for inspection / containment policy decision",
+      "operator_action": "Improve the measurement system before spending inspection capacity on unreliable signals."
+    },
+    {
+      "workspace": "Capacity Stress",
+      "engineering_question": "How does the inspection decision change when capacity tightens?",
+      "method": "Campaign review of used minutes, selected-line sets and residual escape exposure",
+      "evidence": "Capacity utilization, selection stability and economic exposure",
+      "required_inputs": [
+        "line / shift / gage / inspection action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable capacity stress evidence for inspection / containment policy decision",
+      "operator_action": "Prioritize the lines with trustworthy, economically material inspection value."
+    },
+    {
+      "workspace": "Control-Plan Escalation",
+      "engineering_question": "When should adaptive containment become a recurring control policy?",
+      "method": "Decision gate from one-off GAGE-SHIELD allocation into ECON-SPC-P recurring policy",
+      "evidence": "Repeated selection, risk persistence, MSA quality and cost evidence",
+      "required_inputs": [
+        "line / shift / gage / inspection action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable control-plan escalation evidence for inspection / containment policy decision",
+      "operator_action": "Escalate only persistent evidence into a governed adaptive inspection policy."
+    },
+    {
+      "workspace": "Quality Decision Record",
+      "engineering_question": "Can the containment decision be reproduced and audited?",
+      "method": "Traceable process evidence \u2192 defect ML \u2192 GAGE-SHIELD \u2192 ECON-SPC-P dossier",
+      "evidence": "Risk predictions, measurement evidence, capacity, escape exposure and human authority",
+      "required_inputs": [
+        "line / shift / gage / inspection action",
+        "validated empirical/reference evidence",
+        "current decision constraints"
+      ],
+      "decision_output": "Auditable quality decision record evidence for inspection / containment policy decision",
+      "operator_action": "Quality Engineer approves, modifies or rejects the containment plan."
+    },
+    {
+      "workspace": "Steel Quality Backbone",
+      "engineering_question": "Is the defect evidence and measurement context strong enough to allocate inspection capacity?",
+      "method": "UCI Steel Plates Faults acquisition, class/missingness validation, defect-risk calibration and GAGE-SHIELD evidence gate",
+      "evidence": "Observation count, feature count, defect balance, raw hash, classifier calibration/error slices and measurement-aware inspection gate.",
+      "required_inputs": [
+        "validated public source/provenance",
+        "raw/canonical hash and schema state",
+        "current model/algorithm readiness"
+      ],
+      "decision_output": "Auditable steel quality backbone evidence",
+      "operator_action": "Quality Engineer reviews defect risk together with MSA discrimination before approving containment or inspection changes."
+    }
+  ],
+  "project_title": "Manufacturing Quality Intelligence",
+  "campaign": "Adaptive Quality Containment Campaign",
+  "campaign_identity": "expected escape exposure + measurement-value frontier",
+  "depth_phase": "PROJECT_NATIVE_1P2_EXPANSION"
+}

@@ -1,0 +1,20 @@
+{
+  "project": "Manufacturing Quality Intelligence",
+  "source_provider": "UCI Machine Learning Repository",
+  "source_name": "Steel Plates Faults",
+  "source_url": "https://archive.ics.uci.edu/dataset/198/steel+plates+faults",
+  "download_url": "https://archive.ics.uci.edu/static/public/198/steel+plates+faults.zip",
+  "doi": "10.24432/C5J88N",
+  "license": "CC BY 4.0",
+  "advertised": "1,941 steel-plate observations \u00d7 27 measurements with seven fault classes",
+  "entity": "part / fault / gage / inspection station",
+  "historical": "fault mix, capability, gage quality and containment chronology",
+  "case": "steel-plate fault escape and adaptive-inspection study",
+  "refresh_required_for_real_data": false,
+  "snapshot_acquired_utc": "2026-09-07T00:00:00Z",
+  "snapshot_archive_sha256": "CB8EB9859198B63F053E443513036B401746FA517EF58BD17C846C6741C93919",
+  "canonical_feature_sha256": "104B096641ABC21CDB72F0BFEF342890A852AA143E39D3EDDF1B875CBC864304",
+  "canonical_target_sha256": "D6CFCBD11A13157F377E6B080F7762C8BCD089980BD224776D8090FB5EF7CE6A",
+  "offline_validation_mode": "downloaded public snapshot + source contract",
+  "provenance_rule": "Never label reference/synthetic fixtures as external observations."
+}

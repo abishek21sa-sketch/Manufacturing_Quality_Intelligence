@@ -1,0 +1,8 @@
+{
+  "project": "Manufacturing Quality Intelligence",
+  "ui_namespace": "qc-",
+  "signature_marker": "MANUFACTURING QUALITY INTELLIGENCE",
+  "workspace_count": 33,
+  "max_allowed_pairwise_similarity": 0.2,
+  "product_identity": "SPC-metrology quality control room"
+}

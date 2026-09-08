@@ -1,0 +1,94 @@
+{
+  "health": {
+    "status": "ok",
+    "model_ready": true,
+    "version": "1.5.0",
+    "decision_store": true
+  },
+  "decision": {
+    "risk": 0.17475212807450874,
+    "severity": "high",
+    "action": "Increase inspection and investigate leading process contributors",
+    "inspection_fraction": 1.0,
+    "expected_cost": 2772.76915267058,
+    "rationale": [
+      "Predicted defect probability 0.175",
+      "Cost-minimizing inspection fraction 1.00",
+      "Monte Carlo mean defects per 1000 units 174.8",
+      "Monte Carlo P95 quality cost $16,490"
+    ],
+    "root_causes": [
+      {
+        "feature": "tool_wear_pct",
+        "signed_contribution": 0.8797681355409112
+      },
+      {
+        "feature": "temperature_c",
+        "signed_contribution": 0.30433015903063426
+      },
+      {
+        "feature": "pressure_bar",
+        "signed_contribution": 0.24561364481492617
+      },
+      {
+        "feature": "vibration_mm_s",
+        "signed_contribution": 0.14485133312535495
+      }
+    ],
+    "corrective_actions": [
+      {
+        "feature": "tool_wear_pct",
+        "signed_contribution": 0.8797681355409112,
+        "recommended_check": "Inspect or replace tooling and verify tool-life standard / preventive replacement interval."
+      },
+      {
+        "feature": "temperature_c",
+        "signed_contribution": 0.30433015903063426,
+        "recommended_check": "Verify heater control, thermocouple calibration and thermal setpoint window."
+      },
+      {
+        "feature": "pressure_bar",
+        "signed_contribution": 0.24561364481492617,
+        "recommended_check": "Check pressure regulator, leaks and recipe setpoint; confirm control-loop stability."
+      },
+      {
+        "feature": "vibration_mm_s",
+        "signed_contribution": 0.14485133312535495,
+        "recommended_check": "Inspect spindle/bearing condition, fixturing and imbalance before continued release."
+      }
+    ],
+    "decision_id": 1
+  },
+  "history_summary": {
+    "decision_count": 1,
+    "average_risk": 0.17475212807450874,
+    "maximum_risk": 0.17475212807450874,
+    "severity_counts": {
+      "high": 1
+    }
+  },
+  "evidence_release": "1.5.0",
+  "advanced_spc": {
+    "ewma": {
+      "center": 0.014000000000000002,
+      "lambda": 0.2,
+      "signal_count": 3,
+      "signals": [
+        8,
+        9,
+        10
+      ]
+    },
+    "cusum": {
+      "target": 0.014000000000000002,
+      "k": 0.037013511046643494,
+      "h": 0.37013511046643494,
+      "signal_count": 3,
+      "signals": [
+        8,
+        9,
+        10
+      ]
+    }
+  }
+}

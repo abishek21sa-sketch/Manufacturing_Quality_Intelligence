@@ -1,0 +1,60 @@
+{
+  "health": {
+    "status": "ok",
+    "model_ready": true,
+    "version": "1.0.0"
+  },
+  "decision": {
+    "risk": 0.15991121025069702,
+    "severity": "high",
+    "action": "Increase inspection and investigate leading process contributors",
+    "inspection_fraction": 1.0,
+    "expected_cost": 2639.2008922562745,
+    "rationale": [
+      "Predicted defect probability 0.160",
+      "Cost-minimizing inspection fraction 1.00",
+      "Monte Carlo mean defects per 1000 units 160.1",
+      "Monte Carlo P95 quality cost $15,215"
+    ],
+    "root_causes": [
+      {
+        "feature": "tool_wear_pct",
+        "signed_contribution": 0.9399599554610245
+      },
+      {
+        "feature": "temperature_c",
+        "signed_contribution": 0.26335329294111315
+      },
+      {
+        "feature": "pressure_bar",
+        "signed_contribution": 0.2091120503680542
+      },
+      {
+        "feature": "vibration_mm_s",
+        "signed_contribution": 0.10159872322672973
+      }
+    ],
+    "corrective_actions": [
+      {
+        "feature": "tool_wear_pct",
+        "signed_contribution": 0.9399599554610245,
+        "recommended_check": "Inspect or replace tooling and verify tool-life standard / preventive replacement interval."
+      },
+      {
+        "feature": "temperature_c",
+        "signed_contribution": 0.26335329294111315,
+        "recommended_check": "Verify heater control, thermocouple calibration and thermal setpoint window."
+      },
+      {
+        "feature": "pressure_bar",
+        "signed_contribution": 0.2091120503680542,
+        "recommended_check": "Check pressure regulator, leaks and recipe setpoint; confirm control-loop stability."
+      },
+      {
+        "feature": "vibration_mm_s",
+        "signed_contribution": 0.10159872322672973,
+        "recommended_check": "Inspect spindle/bearing condition, fixturing and imbalance before continued release."
+      }
+    ]
+  }
+}

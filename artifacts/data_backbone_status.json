@@ -1,0 +1,44 @@
+{
+  "autonomous_execution": false,
+  "case_study": {
+    "decision_impact": "GAGE-SHIELD remains in reference mode until Steel Plates Faults observations are acquired.",
+    "name": "Steel Fault Risk and Measurement-Aware Inspection Allocation",
+    "status": "ACQUISITION_REQUIRED"
+  },
+  "claim_boundary": "UCI Steel Plates Faults is public quality data. Bosch competition raw data is not redistributed.",
+  "current_model_version": "public-data-backbone-1.0",
+  "dataset": "UCI Steel Plates Faults",
+  "dataset_state": "EXTERNAL_ACQUISITION_REQUIRED",
+  "generated_at_utc": "2026-09-06T17:04:55.413071+00:00",
+  "human_authority": "QUALITY_ENGINEER",
+  "layers": {
+    "contracts": "data/contracts",
+    "dictionaries": "data/dictionaries",
+    "processed": "data/processed",
+    "provenance": "data/provenance",
+    "raw": "data/raw",
+    "snapshots": "data/snapshots"
+  },
+  "primary_files": [
+    {
+      "exists": false,
+      "path": "data/raw/uci_steel/features.csv"
+    },
+    {
+      "exists": false,
+      "path": "data/raw/uci_steel/targets.csv"
+    }
+  ],
+  "project": "Manufacturing Quality Intelligence",
+  "schema_validation": "ACQUISITION_REQUIRED",
+  "static_context_files": [
+    {
+      "bytes": 863,
+      "features": 10,
+      "missing_fraction": null,
+      "path": "data/provenance/bosch_production_line_manifest.json",
+      "rows": 1,
+      "sha256": "c715102bb7c7af85d5f6883e4d9697facdd6841fdd7058df2fbd5fdb11ee2982"
+    }
+  ]
+}

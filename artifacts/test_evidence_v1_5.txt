@@ -1,0 +1,6 @@
+Portfolio Release 1.5.0
+Automated test result: 27 passed
+Python compileall: PASS
+Bootstrap validation: PASS
+API smoke: PASS
+Validation architecture: temporal 70/10/20; threshold selected on validation window only

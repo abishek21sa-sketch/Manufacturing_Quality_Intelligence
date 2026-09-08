@@ -1,0 +1,4 @@
+DIAGNOSTICS PASS
+capability_cp=0.415147 cpk=0.255908
+simulation_reproducible=True
+or_status=OPTIMAL objective=3266.000000 inspected=110.0/110

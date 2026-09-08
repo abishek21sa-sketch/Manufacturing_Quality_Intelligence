@@ -1,0 +1,6 @@
+Build date: 2026-08-11
+Editable install: PASS (no-build-isolation/no-deps in offline validation environment)
+Automated tests: .......................                                                  [100%]
+Bootstrap validation: PASS
+Live API health/decision smoke: PASS
+Python: Python 3.13.5

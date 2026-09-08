@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "runtime_ms": 29.193,
+  "project": "Manufacturing Quality Intelligence",
+  "ml_family": "Gradient-boosted decision-stump defect learning",
+  "original_algorithm": "GAGE-SHIELD-v1",
+  "workspace_count": 33,
+  "human_authority": "QUALITY_ENGINEER",
+  "autonomous_execution": false,
+  "decision": {
+    "selected_lines": [
+      "CELL-C",
+      "CELL-A"
+    ],
+    "minutes_used": 62,
+    "capacity": 62,
+    "ranked": [
+      {
+        "line": "CELL-A",
+        "risk": 0.22410846974185786,
+        "escape_cost": 9500,
+        "sensitivity": 0.94,
+        "specificity": 0.96,
+        "inspect_minutes": 34,
+        "gage_value": 56.35668871283906,
+        "discrimination": 0.8999999999999999
+      },
+      {
+        "line": "CELL-B",
+        "risk": 0.523261796170655,
+        "escape_cost": 16000,
+        "sensitivity": 0.55,
+        "specificity": 0.5,
+        "inspect_minutes": 30,
+        "gage_value": 13.953647897419026,
+        "discrimination": 0.050000000000000044
+      },
+      {
+        "line": "CELL-C",
+        "risk": 0.25910846974185786,
+        "escape_cost": 7200,
+        "sensitivity": 0.92,
+        "specificity": 0.93,
+        "inspect_minutes": 28,
+        "gage_value": 56.63370838441202,
+        "discrimination": 0.8500000000000001
+      }
+    ]
+  },
+  "counterfactual": {
+    "naive_policy": "inspect highest predicted-risk line first",
+    "choice": "CELL-B",
+    "disagrees": true
+  }
+}

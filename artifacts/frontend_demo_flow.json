@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "project": "Manufacturing Quality Intelligence",
+  "visual_identity": "SPC-metrology quality control room",
+  "native_entrypoint": "src/mqi/service/static/index.html",
+  "shared_behavioral_contract": [
+    "input",
+    "evidence",
+    "decision",
+    "counterfactual",
+    "human approval"
+  ],
+  "project_specific_flow": [
+    "load a process observation",
+    "inspect SPC and gage evidence",
+    "compare inspection economics",
+    "review adaptive containment",
+    "approve quality action"
+  ],
+  "not_shared": [
+    "theme",
+    "layout",
+    "domain vocabulary",
+    "visualization type"
+  ],
+  "signature_endpoint": "/v1/governance/signature"
+}

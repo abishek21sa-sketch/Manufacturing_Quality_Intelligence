@@ -1,0 +1,87 @@
+{
+  "project": "Manufacturing Quality Intelligence",
+  "release_stage": "PORTFOLIO_PUBLIC_DATA_RELEASE_CANDIDATE",
+  "platform": "Windows-first",
+  "workspaces": 32,
+  "original_algorithm": "GAGE-SHIELD-v1",
+  "predictive_ml_family": "Gradient-boosted decision-stump defect learning",
+  "decision_campaign": "Adaptive Quality Containment Campaign",
+  "campaign_identity": "expected escape exposure + measurement-value frontier",
+  "data_mode": "offline_reference",
+  "empirical_promotion": "REFERENCE_ONLY",
+  "human_authority": "QUALITY_ENGINEER",
+  "autonomous_execution": false,
+  "evidence_inventory": [
+    {
+      "path": "artifacts/tenx_validation.json",
+      "sha256": "871dee7ecb072efa07b92a4f831f476fe1da35f8b215fd471a0a12aacc28a38e"
+    },
+    {
+      "path": "artifacts/tenx_stress.json",
+      "sha256": "3726db39eb6b0a1f3e46d221b717f1dd4f6eac28a611b9889707e97c4b37a374"
+    },
+    {
+      "path": "artifacts/airlines15x_validation.json",
+      "sha256": "291bfc5123683cfeeca2a0d1882b3ad53eafc03cc252dd82e3c9722a126c0e6c"
+    },
+    {
+      "path": "artifacts/final_depth_validation.json",
+      "sha256": "2c1680945a9a1609806b77f3f7978d9831110124ab9a92a8628ea88c7811fdd3"
+    },
+    {
+      "path": "artifacts/intelligence_validation.json",
+      "sha256": "bfb901ce9ad683e195085f6bf1cc11ed4fe246d6290531fa4bd151aacfe7fd87"
+    },
+    {
+      "path": "artifacts/ui_identity_validation.json",
+      "sha256": "2375b20fb87b275b79f1e142f3938049e1999f19e0104e4e36502dbc658336b5"
+    },
+    {
+      "path": "artifacts/frontend_diversity.json",
+      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
+    },
+    {
+      "path": "artifacts/portfolio_validation.json",
+      "sha256": "a7589d4a2c9b397d22109f0ddf3ef74b7273afa599aa5bff66b5458ad4fdb86c"
+    },
+    {
+      "path": "artifacts/governance_standard_validation.json",
+      "sha256": "2bfcaa64979a983821660207b5db0de80d959f7c2ccb8fabea50f7618f138422"
+    },
+    {
+      "path": "PROJECT_METADATA.json",
+      "sha256": "73d56b251ebaacc18407d6ef0abc769219d749eef47b8eef6ad53a48541cfcc1"
+    },
+    {
+      "path": "docs/FRONTEND_DEMO_FLOW.md",
+      "sha256": "faa2e2fbb403f8d1538a8090307897bbcb17634fe599d2e7a1b232e91fa9e987"
+    },
+    {
+      "path": "artifacts/fortune50_capability_benchmark.json",
+      "sha256": "477dad6792f18bbcf65151946796a4b8e45e18acdcffd161a9d51a621dc652d7"
+    },
+    {
+      "path": "artifacts/enterprise_hardening.json",
+      "sha256": "33c79fcbeae8c9c2e15070ca96d9eee2e9b7f4776302a160cc8029d865aa8a71"
+    },
+    {
+      "path": "artifacts/frontend_demo_flow.json",
+      "sha256": "4d01651ba211e58b3d540d01a6dbb0368dfdee99f4134e8e152f207d6fa4e41b"
+    },
+    {
+      "path": "src/mqi/service/api.py",
+      "sha256": "c9d0bee3a9b8751f2be11b1da66243d72e3396512a80c6eca2927e47cd71d3f6"
+    }
+  ],
+  "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",
+  "product_ui_identity": "SPC-metrology quality control room",
+  "ai_agent": "Quality Decision Engineer",
+  "agent_decision_policy": "calibration-gated inspection and containment",
+  "ml_lifecycle_endpoint": "/api/ml/lifecycle",
+  "agent_endpoint": "/api/agent/run",
+  "frontend_similarity_method": "5-token Jaccard after removing embedded workspace contract payload",
+  "max_pairwise_frontend_similarity": 0.1321,
+  "frontend_similarity_threshold": 0.2,
+  "data_backbone": "structured public data contracts + provenance + claim ledger + project-specific empirical case",
+  "claim_ledger": "data/provenance/CLAIM_LEDGER.md"
+}

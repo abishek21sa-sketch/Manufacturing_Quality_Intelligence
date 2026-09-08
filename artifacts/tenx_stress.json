@@ -1,0 +1,239 @@
+{
+  "status": "PASS",
+  "seeds": [
+    3,
+    7,
+    11,
+    19,
+    29
+  ],
+  "decision_path_passes": 5,
+  "naive_decision_changes": 5,
+  "rows": [
+    {
+      "seed": 3,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "selected_lines": [
+          "CELL-C",
+          "CELL-A"
+        ],
+        "minutes_used": 62,
+        "capacity": 62,
+        "ranked": [
+          {
+            "line": "CELL-A",
+            "risk": 0.22759560117245814,
+            "escape_cost": 9500,
+            "sensitivity": 0.94,
+            "specificity": 0.96,
+            "inspect_minutes": 34,
+            "gage_value": 57.2335997049201,
+            "discrimination": 0.8999999999999999
+          },
+          {
+            "line": "CELL-B",
+            "risk": 0.45540837437712034,
+            "escape_cost": 16000,
+            "sensitivity": 0.55,
+            "specificity": 0.5,
+            "inspect_minutes": 30,
+            "gage_value": 12.144223316318413,
+            "discrimination": 0.050000000000000044
+          },
+          {
+            "line": "CELL-C",
+            "risk": 0.26259560117245817,
+            "escape_cost": 7200,
+            "sensitivity": 0.92,
+            "specificity": 0.93,
+            "inspect_minutes": 28,
+            "gage_value": 57.39589568278744,
+            "discrimination": 0.8500000000000001
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "selected_lines": [
+          "CELL-C",
+          "CELL-A"
+        ],
+        "minutes_used": 62,
+        "capacity": 62,
+        "ranked": [
+          {
+            "line": "CELL-A",
+            "risk": 0.17301473502558476,
+            "escape_cost": 9500,
+            "sensitivity": 0.94,
+            "specificity": 0.96,
+            "inspect_minutes": 34,
+            "gage_value": 43.50811718897769,
+            "discrimination": 0.8999999999999999
+          },
+          {
+            "line": "CELL-B",
+            "risk": 0.4212401391950332,
+            "escape_cost": 16000,
+            "sensitivity": 0.55,
+            "specificity": 0.5,
+            "inspect_minutes": 30,
+            "gage_value": 11.233070378159795,
+            "discrimination": 0.050000000000000044
+          },
+          {
+            "line": "CELL-C",
+            "risk": 0.2962401391950332,
+            "escape_cost": 7200,
+            "sensitivity": 0.92,
+            "specificity": 0.93,
+            "inspect_minutes": 28,
+            "gage_value": 64.74963042174478,
+            "discrimination": 0.8500000000000001
+          }
+        ]
+      }
+    },
+    {
+      "seed": 11,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "selected_lines": [
+          "CELL-A",
+          "CELL-C"
+        ],
+        "minutes_used": 62,
+        "capacity": 62,
+        "ranked": [
+          {
+            "line": "CELL-A",
+            "risk": 0.2790040287898777,
+            "escape_cost": 9500,
+            "sensitivity": 0.94,
+            "specificity": 0.96,
+            "inspect_minutes": 34,
+            "gage_value": 70.16130723774391,
+            "discrimination": 0.8999999999999999
+          },
+          {
+            "line": "CELL-B",
+            "risk": 0.5045360593675863,
+            "escape_cost": 16000,
+            "sensitivity": 0.55,
+            "specificity": 0.5,
+            "inspect_minutes": 30,
+            "gage_value": 13.454294916020505,
+            "discrimination": 0.050000000000000044
+          },
+          {
+            "line": "CELL-C",
+            "risk": 0.31400402878987765,
+            "escape_cost": 7200,
+            "sensitivity": 0.92,
+            "specificity": 0.93,
+            "inspect_minutes": 28,
+            "gage_value": 68.6323091473364,
+            "discrimination": 0.8500000000000001
+          }
+        ]
+      }
+    },
+    {
+      "seed": 19,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "selected_lines": [
+          "CELL-C",
+          "CELL-A"
+        ],
+        "minutes_used": 62,
+        "capacity": 62,
+        "ranked": [
+          {
+            "line": "CELL-A",
+            "risk": 0.18632250976003334,
+            "escape_cost": 9500,
+            "sensitivity": 0.94,
+            "specificity": 0.96,
+            "inspect_minutes": 34,
+            "gage_value": 46.854631129453836,
+            "discrimination": 0.8999999999999999
+          },
+          {
+            "line": "CELL-B",
+            "risk": 0.5301478881548738,
+            "escape_cost": 16000,
+            "sensitivity": 0.55,
+            "specificity": 0.5,
+            "inspect_minutes": 30,
+            "gage_value": 14.137277016992071,
+            "discrimination": 0.050000000000000044
+          },
+          {
+            "line": "CELL-C",
+            "risk": 0.22132250976003334,
+            "escape_cost": 7200,
+            "sensitivity": 0.92,
+            "specificity": 0.93,
+            "inspect_minutes": 28,
+            "gage_value": 48.37477713153677,
+            "discrimination": 0.8500000000000001
+          }
+        ]
+      }
+    },
+    {
+      "seed": 29,
+      "pass": true,
+      "changes_naive_decision": true,
+      "decision": {
+        "selected_lines": [
+          "CELL-C",
+          "CELL-A"
+        ],
+        "minutes_used": 62,
+        "capacity": 62,
+        "ranked": [
+          {
+            "line": "CELL-A",
+            "risk": 0.1854676173787351,
+            "escape_cost": 9500,
+            "sensitivity": 0.94,
+            "specificity": 0.96,
+            "inspect_minutes": 34,
+            "gage_value": 46.63965083945722,
+            "discrimination": 0.8999999999999999
+          },
+          {
+            "line": "CELL-B",
+            "risk": 0.49735271626295996,
+            "escape_cost": 16000,
+            "sensitivity": 0.55,
+            "specificity": 0.5,
+            "inspect_minutes": 30,
+            "gage_value": 13.26273909990352,
+            "discrimination": 0.050000000000000044
+          },
+          {
+            "line": "CELL-C",
+            "risk": 0.2204676173787351,
+            "escape_cost": 7200,
+            "sensitivity": 0.92,
+            "specificity": 0.93,
+            "inspect_minutes": 28,
+            "gage_value": 48.18792208248826,
+            "discrimination": 0.8500000000000001
+          }
+        ]
+      }
+    }
+  ]
+}

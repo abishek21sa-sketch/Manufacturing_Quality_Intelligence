@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "release": "1.5.0",
+  "data_quality": {
+    "rows": 5000,
+    "missing_cells": 0,
+    "duplicate_part_ids": 0,
+    "invalid_defect_labels": 0,
+    "passed": true
+  },
+  "model_metrics": {
+    "roc_auc": 0.756397915203233,
+    "average_precision": 0.33003569817531986,
+    "balanced_accuracy": 0.6466512301515033,
+    "brier_score": 0.10310157951909796,
+    "decision_threshold": 0.05,
+    "holdout_defect_rate": 0.133,
+    "mean_predicted_probability": 0.1231010942171483
+  },
+  "validation_design": {
+    "split": "temporal 70/10/20",
+    "threshold_selection": "validation window only",
+    "test_window": "untouched until final evaluation"
+  },
+  "spc": {
+    "individuals": {
+      "limits": {
+        "center": 0.12251632950180476,
+        "lcl": -0.32031532958004766,
+        "ucl": 0.5653479885836572
+      },
+      "monitoring_signals": 68
+    },
+    "ewma_signal_count": 1015,
+    "cusum_signal_count": 2850,
+    "hotelling_t2_signal_count": 138,
+    "hotelling_t2_threshold": 20.090235029663233
+  },
+  "capability": {
+    "cp": 1.0685621184195448,
+    "cpk": 0.806729501232674,
+    "mean": 0.12251632950180476,
+    "sigma": 0.15597283844684176
+  },
+  "msa": {
+    "repeatability_sd": 0.031076979496772156,
+    "reproducibility_sd": 0.010940465858731352,
+    "gage_rr_sd": 0.032946508887116754,
+    "part_to_part_sd": 0.7476617533787075,
+    "percent_study_variation": 4.402333968654394
+  },
+  "drift_monitoring": {
+    "overall_status": "drift",
+    "max_psi": 1.213676457846189,
+    "features": [
+      {
+        "feature": "temperature_c",
+        "psi": 1.213676457846189,
+        "status": "drift"
+      },
+      {
+        "feature": "pressure_bar",
+        "psi": 0.5078304755341336,
+        "status": "drift"
+      },
+      {
+        "feature": "speed_mpm",
+        "psi": 0.009255347123637153,
+        "status": "stable"
+      },
+      {
+        "feature": "vibration_mm_s",
+        "psi": 0.037847114632464304,
+        "status": "stable"
+      },
+      {
+        "feature": "tool_wear_pct",
+        "psi": 0.06180098758921962,
+        "status": "stable"
+      },
+      {
+        "feature": "material_hardness",
+        "psi": 0.011014345888873425,
+        "status": "stable"
+      },
+      {
+        "feature": "humidity_pct",
+        "psi": 0.00515433611864992,
+        "status": "stable"
+      },
+      {
+        "feature": "operator_experience_y",
+        "psi": 0.014935796918353065,
+        "status": "stable"
+      }
+    ]
+  },
+  "inspection_policy": {
+    "sample_fraction": 0.5,
+    "expected_total_cost": 12233.053403520513,
+    "expected_escape_cost": 11633.053403520513,
+    "inspection_cost": 600.0,
+    "detection_probability": 0.475
+  },
+  "simulation": {
+    "mean_defects": 123.1134,
+    "p95_defects": 140.0,
+    "mean_cost": 10464.639,
+    "p95_cost": 11900.0
+  },
+  "evidence_note": "All metrics are generated from the repository's reproducible synthetic validation dataset; they are not plant performance claims. External SECOM validation remains an optional benchmark requiring network access or a local dataset copy."
+}

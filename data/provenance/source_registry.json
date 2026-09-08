@@ -1,0 +1,13 @@
+[
+  {
+    "project": "Manufacturing Quality Intelligence",
+    "company_context": "Bosch-quality-style manufacturing + steel quality",
+    "primary_dataset": "UCI Steel Plates Faults",
+    "dataset_id": 198,
+    "instances": 1941,
+    "features": 27,
+    "license": "CC BY 4.0",
+    "secondary_company_dataset": "Bosch Production Line Performance (Kaggle; competition rules apply)",
+    "intended_use": "Defect classification, class imbalance, fault morphology, GAGE-SHIELD/ECON-SPC-P inspection allocation and cost-of-quality experiments."
+  }
+]

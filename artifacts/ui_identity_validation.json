@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "project": "Manufacturing Quality Intelligence",
+  "ui_identity": "SPC-metrology quality control room",
+  "ui_namespace": "qc-",
+  "workspaces": 33,
+  "checks": {
+    "signature_marker": true,
+    "namespace_depth": true,
+    "workspace_depth": true,
+    "workspace_count_matches": true,
+    "ml_lifecycle_visible": true,
+    "agent_planning_visible": true,
+    "empirical_provenance_visible": true
+  }
+}

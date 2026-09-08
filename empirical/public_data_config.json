@@ -1,0 +1,25 @@
+{
+  "ptype": "mqi",
+  "title": "Manufacturing Quality Intelligence",
+  "dataset": "UCI Steel Plates Faults",
+  "uci_id": 198,
+  "raw_dir": "uci_steel",
+  "primary_files": [
+    "features.csv",
+    "targets.csv"
+  ],
+  "static": [
+    [
+      "source_manifests/bosch_production_line.json",
+      "data/provenance/bosch_production_line_manifest.json"
+    ]
+  ],
+  "algorithm": "GAGE-SHIELD-v1",
+  "case": "Steel Fault Risk and Measurement-Aware Inspection Allocation",
+  "authority": "QUALITY_ENGINEER",
+  "claim": "UCI Steel Plates Faults is public quality data. Bosch competition raw data is not redistributed.",
+  "static_files": [
+    "data/provenance/bosch_production_line_manifest.json"
+  ],
+  "model_version": "public-data-backbone-1.0"
+}
