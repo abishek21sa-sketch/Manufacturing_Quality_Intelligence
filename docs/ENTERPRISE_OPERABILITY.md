@@ -1,8 +1,8 @@
 # Enterprise Operability & Decision Assurance
 
-**Release:** `MQI_ENTERPRISE_RC2`  
-**Phase:** Enterprise operability and decision assurance  
-**Primary target:** Windows  
+**Release:** `MQI_ENTERPRISE_RELEASE`
+**Phase:** Enterprise operability and decision assurance
+**Primary target:** Windows
 
 ## Decision authority
 
