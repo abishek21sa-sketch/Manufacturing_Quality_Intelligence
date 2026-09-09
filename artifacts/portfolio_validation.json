@@ -1,5 +1,5 @@
 {
-  "release": "MQI_PORTFOLIO_RC1",
+  "release": "MQI_PORTFOLIO_RELEASE",
   "method": "ECON-SPC-P",
   "optimal_expected_cost": 82.64691069659199,
   "no_inspection_expected_cost": 157.74153,

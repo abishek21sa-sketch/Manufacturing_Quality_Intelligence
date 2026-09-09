@@ -1,5 +1,5 @@
 $ErrorActionPreference = "Stop"
-Write-Host "Manufacturing Quality Intelligence Portfolio RC1 Acceptance"
+Write-Host "Manufacturing Quality Intelligence Portfolio release Acceptance"
 $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 Set-Location $root
 if (-not (Test-Path ".venv\Scripts\python.exe")) { py -3 -m venv .venv }
@@ -9,4 +9,4 @@ $python = ".venv\Scripts\python.exe"
 $env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = "1"
 & $python -m pytest -q
 & $python scripts/portfolio_validation.py
-Write-Host "MQI_PORTFOLIO_RC1_ACCEPTANCE=PASS"
+Write-Host "MQI_PORTFOLIO_RELEASE_ACCEPTANCE=PASS"

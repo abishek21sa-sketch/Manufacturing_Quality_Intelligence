@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import json
+import os
 import time
 import uuid
 from pathlib import Path
 import pandas as pd
 import numpy as np
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -32,6 +34,14 @@ from mqi.copilot import build_response as build_copilot_response, status as copi
 from mqi.simulation.monte_carlo import simulate_quality
 
 app = FastAPI(title="Manufacturing Quality Intelligence Platform", version="1.6.0")
+_cors_origins = [x.strip() for x in os.getenv("MQI_CORS_ORIGINS", "*").split(",") if x.strip()]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_cors_origins,
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.middleware("http")
 async def request_context(request, call_next):

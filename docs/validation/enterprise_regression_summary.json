@@ -1,6 +1,6 @@
 {
   "project": "Manufacturing Quality Intelligence",
-  "release": "MQI_ENTERPRISE_RC2",
+  "release": "MQI_ENTERPRISE_RELEASE",
   "phase": "ENTERPRISE_OPERABILITY_AND_DECISION_ASSURANCE",
   "result": "PASS",
   "passed": 36,

@@ -18,9 +18,9 @@
     "claim_boundary": true
   },
   "workspaces": 33,
-  "data_mode": "offline_reference",
-  "promotion": "REFERENCE_ONLY",
+  "data_mode": "refreshed_external",
+  "promotion": "EXTERNAL_EVIDENCE_ACTIVE",
   "source": "Steel Plates Faults",
-  "rows": 250,
+  "rows": 1941,
   "case": "steel-plate fault escape and adaptive-inspection study"
 }

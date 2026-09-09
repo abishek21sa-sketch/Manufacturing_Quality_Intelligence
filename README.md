@@ -1,10 +1,8 @@
-## AIRLINES-1.5× DEPTH CANDIDATE
+# Manufacturing Quality Intelligence
 
-Current release `MQI_FORTUNE50_AIRLINES15X_RC4` adds a live empirical/historical analysis layer, 26+ substantive workspaces, project-native domain diagnostics, external-source refresh/provenance, and AI decisions grounded in explicit evidence mode. See `docs/AIRLINES_15X_RELEASE.md`.
+## Production readiness
 
-# Fortune-50 TENX analytical release
-
-**Internal portfolio target:** Math 10/10 · UI 10/10 · AI 10/10, subject to the evidence boundaries below.
+Manufacturing Quality Intelligence includes a live empirical and historical analysis layer, project-native domain diagnostics, external-source provenance, and AI decisions grounded in explicit evidence. See `docs/ENGINEERING_RELEASE.md`.
 
 - Repository-authored algorithm: **GAGE-SHIELD-v1**
 - Unique predictive-learning family: **Gradient-boosted decision-stump defect learning**
@@ -27,11 +25,19 @@ The first command validates prediction → decision → counterfactual → OR es
 ---
 
 
-## Portfolio RC1 — ECON-SPC-P adaptive inspection
+## Portfolio release — ECON-SPC-P adaptive inspection
 
 The product now integrates an MSA-aware finite-horizon inspection POMDP. Latent process-state belief, Gage R&R-derived observation quality, escape/correction economics, action cost, and shared inspection capacity jointly determine whether and where to inspect. This is a governed decision-support policy; it does not authorize plant inspection changes or claim realized savings.
 
 # Manufacturing Quality Intelligence Platform
+
+## Deployment
+
+Deploy `src/mqi/service/static/` as the Vercel project root. Its `config.js`
+routes browser API calls to the Render service declared in the root
+`render.yaml`; override `window.__MQI_API_BASE__` for previews. Deploy the
+repository root as a Render Blueprint, then verify `/health` and `/v1/evidence`
+before opening the Vercel command center.
 
 A production-structured manufacturing quality decision intelligence system implementing the governed loop **measure → detect → predict → diagnose → simulate → optimize → recommend**.
 

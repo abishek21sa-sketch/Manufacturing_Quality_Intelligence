@@ -14,35 +14,35 @@
   "evidence_inventory": [
     {
       "path": "artifacts/tenx_validation.json",
-      "sha256": "871dee7ecb072efa07b92a4f831f476fe1da35f8b215fd471a0a12aacc28a38e"
+      "sha256": "2f1fe8a4f8166b4b12bb4ec286af6e47aba244ecff8c96487eb0ed48a53ffc5d"
     },
     {
       "path": "artifacts/tenx_stress.json",
-      "sha256": "3726db39eb6b0a1f3e46d221b717f1dd4f6eac28a611b9889707e97c4b37a374"
+      "sha256": "915cb417464d8e442f55073832ab6adb46ff6265377524fe5eebf6c39e394ec5"
     },
     {
-      "path": "artifacts/airlines15x_validation.json",
-      "sha256": "291bfc5123683cfeeca2a0d1882b3ad53eafc03cc252dd82e3c9722a126c0e6c"
+      "path": "artifacts/empirical_validation.json",
+      "sha256": "a7d0d8c575ec24bd34cfea90b2aab20f9a6e4732df29ee146d9ed84073a493e8"
     },
     {
       "path": "artifacts/final_depth_validation.json",
-      "sha256": "2c1680945a9a1609806b77f3f7978d9831110124ab9a92a8628ea88c7811fdd3"
+      "sha256": "1ed2eca4700a9a8f067676b2d1b5544308a12a32882c6bcf5e9862bdc5662a97"
     },
     {
       "path": "artifacts/intelligence_validation.json",
-      "sha256": "bfb901ce9ad683e195085f6bf1cc11ed4fe246d6290531fa4bd151aacfe7fd87"
+      "sha256": "dccc3fe56acfbc76d5b79ce0a56db5e45daef5451b38b88eaf3c984bb97ad1a5"
     },
     {
       "path": "artifacts/ui_identity_validation.json",
-      "sha256": "2375b20fb87b275b79f1e142f3938049e1999f19e0104e4e36502dbc658336b5"
+      "sha256": "50f3f04813d6a47fdb2258eca63358cdf31c122a52409284a7d028c230ccaa71"
     },
     {
       "path": "artifacts/frontend_diversity.json",
-      "sha256": "700d77fc065fd1fbae0aeb2cf237dcf38f13485937f4b35a21713373b4440dac"
+      "sha256": "0c545f24a43a027935d96eb793d1ec6c7b295ce9c71919e6eb349112511aab6c"
     },
     {
       "path": "artifacts/portfolio_validation.json",
-      "sha256": "a7589d4a2c9b397d22109f0ddf3ef74b7273afa599aa5bff66b5458ad4fdb86c"
+      "sha256": "aea6f6a1fa955bf98f702ec6fe479fe13ef656716c19a32ef12deb409e736779"
     },
     {
       "path": "artifacts/governance_standard_validation.json",
@@ -70,7 +70,7 @@
     },
     {
       "path": "src/mqi/service/api.py",
-      "sha256": "c9d0bee3a9b8751f2be11b1da66243d72e3396512a80c6eca2927e47cd71d3f6"
+      "sha256": "1bb44520f419db2731b08971f3e81dbd1fd855f8c34698bf9689563b21e1f6ac"
     }
   ],
   "claim_boundary": "Portfolio-grade analytical validation. External/domain validation and native dependency acceptance remain required where explicitly marked; autonomous operational execution is disabled.",
