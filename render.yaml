@@ -4,7 +4,11 @@ services:
     runtime: python
     plan: free
     buildCommand: pip install .
-    startCommand: uvicorn mqi.service.api:app --host 0.0.0.0 --port $PORT
+    # `mqi bootstrap` writes validation_report.json/holdout_predictions.csv under the repo tree
+    # (settings.artifact_dir) -- Render's Python native runtime build step doesn't persist file
+    # writes into the runtime container (same class of bug documented in Circular's render.yaml),
+    # so this has to run at startup, not in buildCommand, or /v1/evidence 404s forever.
+    startCommand: mqi bootstrap && uvicorn mqi.service.api:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
       - key: PYTHON_VERSION
