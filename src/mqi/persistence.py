@@ -2,18 +2,45 @@ from __future__ import annotations
 
 import json
 import sqlite3
+import sys
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 
 class DecisionStore:
+    """SQLite-backed decision log.
+
+    Some deployment targets for this API (e.g. a Python serverless
+    function runtime) expose a read-only filesystem outside of a temp
+    directory. If the configured on-disk path can't be created/opened for
+    writing, fall back to a process-local in-memory database instead of
+    crashing the whole application at import time -- decision persistence
+    is a convenience feature, not something worth taking the API down for.
+    """
+
     def __init__(self, path: Path):
         self.path = Path(path)
-        self.path.parent.mkdir(parents=True, exist_ok=True)
-        self._init()
+        self._memory_conn = None
+        try:
+            self.path.parent.mkdir(parents=True, exist_ok=True)
+            self._init()
+        except (OSError, sqlite3.Error) as exc:
+            print(
+                f"WARNING: DecisionStore could not open {self.path!s} ({exc!r}); "
+                "falling back to an in-memory store. Decisions will not persist "
+                "across restarts.",
+                file=sys.stderr,
+            )
+            traceback.print_exc()
+            self._memory_conn = sqlite3.connect(":memory:", check_same_thread=False)
+            self._memory_conn.row_factory = sqlite3.Row
+            self._init()
 
     def _connect(self):
+        if self._memory_conn is not None:
+            return self._memory_conn
         con = sqlite3.connect(self.path)
         con.row_factory = sqlite3.Row
         return con

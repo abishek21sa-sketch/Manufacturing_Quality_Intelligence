@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import time
+import traceback
 import uuid
 from pathlib import Path
 import pandas as pd
@@ -53,7 +55,15 @@ async def request_context(request, call_next):
     response.headers["X-Quality-Policy-Execution"]="REVIEW_ONLY"
     return response
 STATIC_DIR = Path(__file__).parent / "static"
-app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+try:
+    app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+except (RuntimeError, OSError) as exc:
+    # Some deployment targets (e.g. this API accidentally invoked as a
+    # constrained serverless function) may not bundle the static directory.
+    # The primary UI is a separately-deployed static frontend; don't take
+    # the whole API down just because the bundled static mount is missing.
+    print(f"WARNING: could not mount static assets from {STATIC_DIR!s}: {exc!r}", file=sys.stderr)
+    traceback.print_exc()
 
 class CopilotRequest(BaseModel):
     message: str = Field(min_length=1, max_length=2000)

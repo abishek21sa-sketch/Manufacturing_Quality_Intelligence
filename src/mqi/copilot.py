@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import json
 import os
+import sys
+import traceback
 import urllib.error
 import urllib.request
 from typing import Any
@@ -40,4 +42,6 @@ def build_response(message: str, context: dict[str, Any] | None = None) -> dict[
         return {**status(), "answer": fallback, "provider": "deterministic", "model": "rule-based", "fallback": True}
     try: return {"answer": _gemini(message, context), "provider": "Google Gemini", "model": DEFAULT_MODEL, "fallback": False, **status()}
     except (OSError, urllib.error.URLError, json.JSONDecodeError, RuntimeError) as exc:
+        print(f"WARNING: Gemini copilot call failed ({exc!r}); using deterministic fallback.", file=sys.stderr)
+        traceback.print_exc()
         return {**status(), "answer": fallback, "provider": "deterministic-fallback", "model": "rule-based", "fallback": True, "error": type(exc).__name__}
